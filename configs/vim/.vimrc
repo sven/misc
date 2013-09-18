@@ -44,4 +44,6 @@ if has("autocmd")
  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
      \| exe "normal g'\"" | endif
 endif
+" show C space errors
+let c_space_errors=1
 
